@@ -1,8 +1,9 @@
 import express from 'express'
 import weatherRouter from './routers/weather'
+import * as env from './config'
 
 const app = express()
-const port = process.env.PORT
+const port = env.PORT
 
 app.use(express.json())
 app.use(weatherRouter)

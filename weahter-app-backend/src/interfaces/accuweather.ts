@@ -1,14 +1,14 @@
 export interface Autocomplete {
-    Type: string,
-    Key: string,
-    LocalizedName: string,
-    Country: {
-        ID: string,
-        LocalizedName: string
+    type: string,
+    key: string,
+    locationName: string,
+    country: {
+        id: string,
+        name: string
     },
-    AdministrativeArea: {
-        ID: string,
-        LocalizedName: string
+    administrativeArea: {
+        id: string,
+        name: string
     }
 }
 

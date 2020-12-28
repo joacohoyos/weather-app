@@ -1,7 +1,8 @@
 import axios from 'axios'
-
+import * as env from '../config'
+ 
 const instance = axios.create({
-    baseURL: 'http://dataservice.accuweather.com/locations/v1/'
+    baseURL: env.ACCUWEATHER_BASE_URL
 })
 
 export default instance
