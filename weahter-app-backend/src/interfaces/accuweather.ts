@@ -13,7 +13,7 @@ export interface Location {
 }
 
 export interface Weather {
-    weatherIcon: string,
+    weatherIcon: number,
     temperature: {
         metric: number,
         imperial: number
@@ -37,5 +37,5 @@ export interface Forecast {
     maxTemperature: number, 
     minTemperature: number, 
     date: Date,
-    weatherIcon: string
+    weatherIcon: number
 }

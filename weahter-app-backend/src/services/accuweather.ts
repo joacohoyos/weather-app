@@ -1,7 +1,7 @@
 import axios from '../utility/axios-weather'
 import { Forecast, Location, Weather } from '../interfaces/accuweather'
 import { ACCUWEATHER_API_KEY} from '../config'
-import * as weatherText from '../utility/weatherText'
+import weatherIcons from '../utility/weatherIcons'
 
 const API_KEY = ACCUWEATHER_API_KEY
 
@@ -105,13 +105,13 @@ export const searchForecastWeather = async (locationKey: string, isMetric: boole
 }
 
 const getWeatherIcon = (cloudCover: number, hasPrecipitation: boolean, text: string) => {
-    if(text.toLowerCase().includes('thunder')) return weatherText.RAIN_THUNDER
+    if(text.toLowerCase().includes('thunder')) return weatherIcons.RAIN_THUNDER
     
-    if(hasPrecipitation) return weatherText.RAIN
+    if(hasPrecipitation) return weatherIcons.RAIN
 
-    if(cloudCover <= 30) return weatherText.SUNNY
+    if(cloudCover <= 30) return weatherIcons.SUNNY
 
-    if(cloudCover <=70) return weatherText.PARTIAL_CLOUD
+    if(cloudCover <=70) return weatherIcons.PARTIAL_CLOUD
 
-    return weatherText.CLOUDY
+    return weatherIcons.CLOUDY
 }
