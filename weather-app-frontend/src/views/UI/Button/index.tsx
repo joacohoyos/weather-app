@@ -1,20 +1,18 @@
 import React from 'react'
-import styles from './Button.module.css'
+import './Button.scss'
 
 interface ButtonProps {
     rounded?: boolean,
-    btnType: string
+    color: string,
+    children: React.ReactChild
 }
 
-const Button: React.FC<ButtonProps> = props => {
-    
-    const classes = [styles.Button]
-    classes.push(styles[props.btnType])
-    
-    if(props.rounded) classes.push(styles.Rounded)
+const Button = (props: ButtonProps) => {
     
     return (
-        <button className={classes.join(' ')}>{props.children}</button>
+        <button className={['Button', props.color, props.rounded? 'Rounded' : ''].join(' ')}>
+            {props.children}
+        </button>
     );
 }
 

@@ -1,14 +1,14 @@
 import React from 'react'
-import styles from './WeatherIcon.module.css'
+import './WeatherIcon.scss'
 
 interface WeatherIconProps {
     src: string
     alt: string
 }
 
-const WeatherIcon: React.FC<WeatherIconProps> = props => {
+const WeatherIcon = (props: WeatherIconProps) => {
     return (
-        <div className={styles.WeatherIcon}>
+        <div className="WeatherIcon">
             <img src={props.src} alt={props.alt} />
         </div>
     );

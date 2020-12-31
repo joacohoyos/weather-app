@@ -4,23 +4,25 @@
     border: none;
     box-shadow: 1px 1px 2px 0px #444a52;
     cursor: pointer;
-    font-size: .9rem
+    font-size: .9rem;
+    
+    .IconWrapper {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
 
-.Button:hover {
-    background-color: lightgray;
-    color: black
-}
-
-.Button i{
-    padding-left: 2px;
-    padding-right: 2px;
-}
 .Gray{
     background: #525961;
     color: white;
+    &:hover {
+        background-color: lightgray;
+        color: black
+    }
 }
+
 
 .Rounded {
   border-radius: 50px 
 }
+

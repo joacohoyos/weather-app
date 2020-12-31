@@ -1,0 +1,60 @@
+.WeatherPanel {
+    flex:1;
+    text-align: center;
+    background-color: #1E223A;
+    color: whitesmoke;
+    font-size: 1rem;
+
+    .Header {
+        margin: 30px auto;
+        margin-bottom: 110px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Temperature {
+        font-size: 6.5em;
+        font-weight: 500;
+    }
+
+    .Degree {
+        font-size: 0.5em
+    }
+
+    .WeatherText {
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+
+    .Wrapper{
+        margin: 110px auto;
+        font-size: 0.9em;
+    }
+    @media(max-height: 840px){
+        font-size: 0.9em;
+    
+        .Wrapper{
+            margin: 90px auto;
+            font-size: 0.9em;
+        }   
+    
+        .Header{
+            margin-bottom: 90px
+        }
+    }
+    
+    
+    @media(max-height: 750px){
+        font-size: 0.7rem;
+        
+        .Wrapper{
+            margin: 90px auto;
+        }   
+    
+        .Header{
+            margin-bottom: 90px
+        }
+    }
+}
+
+
