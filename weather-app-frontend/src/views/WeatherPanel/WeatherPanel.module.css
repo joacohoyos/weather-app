@@ -1,0 +1,34 @@
+.WeatherPanel {
+    width: 30%;
+    text-align: center;
+    background-color: #1E223A;
+    color: whitesmoke;
+}
+
+
+.WeatherPanel .Header {
+    margin: 30px auto;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.WeatherPanel .Temperature {
+    font-size: 6.5rem;
+    font-weight: 500;
+}
+
+.WeatherPanel .Degree {
+    font-size: 2.7rem
+}
+
+.WeatherPanel .WeatherText {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.WeatherPanel div{
+    margin: 120px auto;
+    font-size: 0.9rem;
+}
+

@@ -1,0 +1,26 @@
+.Button {
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 2px 0px #444a52;
+    cursor: pointer;
+    font-size: .9rem
+}
+
+.Button:hover {
+    background-color: lightgray;
+    color: black
+}
+
+.Button i{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.Gray{
+    background: #525961;
+    color: white;
+}
+
+.Rounded {
+  border-radius: 50px 
+}
