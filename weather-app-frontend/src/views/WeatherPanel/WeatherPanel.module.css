@@ -3,32 +3,62 @@
     text-align: center;
     background-color: #1E223A;
     color: whitesmoke;
+    font-size: 1rem
 }
 
 
 .WeatherPanel .Header {
     margin: 30px auto;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
     display: flex;
     justify-content: space-around;
 }
 
 .WeatherPanel .Temperature {
-    font-size: 6.5rem;
+    font-size: 6.5em;
     font-weight: 500;
 }
 
 .WeatherPanel .Degree {
-    font-size: 2.7rem
+    font-size: 0.5em
 }
 
 .WeatherPanel .WeatherText {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 300;
 }
 
 .WeatherPanel div{
-    margin: 120px auto;
-    font-size: 0.9rem;
+    margin: 110px auto;
+    font-size: 0.9em;
 }
 
+@media(max-height: 840px){
+    .WeatherPanel {
+        font-size: 0.9em;
+    }
+
+    .WeatherPanel div{
+        margin: 90px auto;
+        font-size: 0.9em;
+    }   
+
+    .WeatherPanel .Header{
+        margin-bottom: 90px
+    }
+}
+
+
+@media(max-height: 750px){
+    .WeatherPanel {
+        font-size: 0.7rem;
+    }
+
+    .WeatherPanel div{
+        margin: 90px auto;
+    }   
+
+    .WeatherPanel .Header{
+        margin-bottom: 90px
+    }
+}
