@@ -1,0 +1,45 @@
+.WeatherInfo {
+    flex: 3;  
+    background: #100F1D;
+    .Container {
+        width: 55%;
+        margin: auto;
+        .Header {
+            display: flex;
+            justify-content: flex-end;
+            margin: 50px 0;
+            .Button {
+                margin: 10px;
+            }
+        }
+    }
+
+    @media(min-width: 1501px) and (max-width: 1700px) {
+        
+        .Container {
+            width: 65%;
+        }
+    }
+    @media(min-width: 1376px) and (max-width: 1500px) {
+        .Container {
+            width: 70%;
+        }
+    }
+    @media (min-width: 1251px) and (max-width: 1375px ) {
+        .Container {
+            width: 75%;
+        }
+    }
+    @media (min-width: 1151px) and (max-width: 1250px ) {
+        .Container {
+            width: 80%;
+        }
+    }
+    
+    @media (max-width: 1150px) {
+        .Container {
+            width: 90%;
+        }
+    }
+
+}
