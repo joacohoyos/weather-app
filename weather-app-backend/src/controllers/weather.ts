@@ -5,6 +5,7 @@ import { searchLocationsByAutocomplete, searchLocationByGeoposition, searchCurre
 export const getLocationsByAutocomplete: RequestHandler = async (req, res, next) => {
     if(!req.query.query){
         res.status(400).send()
+        next()
     }
     const query: string = req.query.query as string
     try {
@@ -20,9 +21,11 @@ export const getLocationsByAutocomplete: RequestHandler = async (req, res, next)
 export const getLocationByGeoposition: RequestHandler = async (req, res, next) => {
     if(!req.query.lat){
         res.status(400).send()
+        next()
     }
     if(!req.query.long){
         res.status(400).send()
+        next()
     }
     try {
         const lat: number = Number.parseFloat(req.query.lat as string) 
@@ -52,6 +55,7 @@ export const getForecastWeather: RequestHandler = async (req, res, next) => {
     const locationKey = req.params.locationKey as string
     if(!req.query.isMetric){
         res.status(400).send()
+        next()
     }
 
     try{

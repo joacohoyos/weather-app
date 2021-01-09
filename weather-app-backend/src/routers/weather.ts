@@ -4,7 +4,7 @@ import { getLocationsByAutocomplete, getLocationByGeoposition, getCurrentWeather
 const router = Router()
 
 router.get('/weather/location/autocomplete', getLocationsByAutocomplete)
-router.get('/weather/location/ip', getLocationByGeoposition)
+router.get('/weather/location/geoposition', getLocationByGeoposition)
 router.get('/weather/current/:locationKey', getCurrentWeather)
 router.get('/weather/forecast/:locationKey', getForecastWeather)
 
