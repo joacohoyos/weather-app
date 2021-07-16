@@ -1,0 +1,23 @@
+.ForecastCard {
+    height: 140px;
+    width: 120px;
+    margin: 10px 0px;
+    background: #1E223A;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: 3px 3px;
+
+    .ForecastDate {
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .WeatherIcon {
+        margin: 10px auto
+    }
+
+    .ForecastTemperature {
+        display: flex;
+        justify-content: space-around;
+    }
+}

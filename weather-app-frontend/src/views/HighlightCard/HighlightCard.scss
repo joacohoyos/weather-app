@@ -1,0 +1,24 @@
+.HighlightCard {
+    width: 48%;
+    margin: 2% 0;
+    background: #1E223A;
+    color: whitesmoke;
+    text-align: center;
+    .Title {
+        font-size: 0.9rem;
+        font-weight: 300;
+        
+    }
+    .Stat {
+        font-size: 3.5rem;
+        margin: 15px auto;
+        .StatUnit {
+            font-size: 1.7rem;
+            font-weight: 300;
+        }
+    }
+    .Children {
+        margin: 15px auto;
+        margin-top: 20px;
+    }
+}

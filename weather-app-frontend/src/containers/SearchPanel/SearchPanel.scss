@@ -1,0 +1,57 @@
+.SearchPanel {
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 165, 209, 0.45);
+    z-index: 2;
+    left: 0;
+    position: absolute;
+    transition: top .5s ease-in-out;
+
+    .Button {
+        display: block;
+        padding: 10px 15px;
+        margin: 10px auto;
+    }
+
+    input {
+        margin: 20px;
+        height: 25px;
+        width: 250px;
+        outline: none;
+        margin-bottom: 0;
+    }
+    
+    .FilteredList {
+        border: 1px solid #767676;
+        border-top: 0;
+        background: white;
+        width: 250px;
+        padding: 1px 3px;
+        margin: 0 auto;
+
+        .FilteredElement {
+            cursor: pointer;
+            border-bottom: 1px solid whitesmoke;
+            height: 25px;
+            width: 100%;
+            color: black;
+            text-align: left;
+            padding-left: 5px;
+            padding-top: 3px;
+
+            &:hover {
+                background: lightgrey;
+            }
+        }
+    }
+
+}
+
+.Closed {
+    top: -3000px
+}
+
+.Opened {
+    position: absolute;
+    top: 0;
+}

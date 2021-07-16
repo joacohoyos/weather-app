@@ -34,7 +34,7 @@ export const searchLocationsByAutocomplete = async (query: string) => {
     }   
 }
 
-export const searchLocationByGeoposition = async (lat: number, long: number) => {
+export const searchLocationByGeoposition =  	async (lat: number, long: number) => {
     const geoposition = lat + ',' + long
     const queryParams = `apikey=${API_KEY}&q=${geoposition}`
     const endpoint = `locations/v1/cities/geoposition/search?${queryParams}`
@@ -57,7 +57,7 @@ export const searchCurrentWeather = async (locationKey: string) => {
         const weatherResponse: Weather = {
             weatherIcon: getWeatherIcon(data.CloudCover, data.HasPrecipitation, data.WeatherText),
             temperature: {
-                metric: data.Temperature.Metric.Valuem,
+                metric: data.Temperature.Metric.Value,
                 imperial: data.Temperature.Imperial.Value
             },
             humidity: data.RelativeHumidity,

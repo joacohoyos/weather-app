@@ -1,0 +1,33 @@
+.Button {
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 2px 0px #555460;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 600;
+    .IconWrapper {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+.Gray{
+    background: #70737E;
+    color: #E7E5F3;
+    &:hover {
+        background-color: #E7E5F3;
+        color: #555460
+    }
+    &.Active{
+        background-color: #E7E5F3;
+        color: #555460;
+    }
+}
+
+
+.Rounded {
+  border-radius: 50px 
+}
+

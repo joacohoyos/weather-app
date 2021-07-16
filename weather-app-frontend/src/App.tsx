@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
+import WeatherPanel from './containers/WeatherPanel'
+import WeatherInfo from './containers/WeatherInfo'
+import './App.scss';
 
-function App() {
+const App: React.FC = () => {
+
   return (
     <div className="App">
-      WeatherApp
+      <WeatherPanel />
+      <WeatherInfo />
     </div>
   );
 }
